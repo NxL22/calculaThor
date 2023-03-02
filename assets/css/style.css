@@ -1,0 +1,138 @@
+body {
+    /* Centra el contenido del cuerpo de la página */
+    text-align: center;
+    /* Elimina los márgenes predeterminados */
+    margin: 0;
+    /* Asigna una imagen de fondo */
+    background-image: url(/assets/img/thor-1.png);
+        /* Ajusta la imagen de fondo para cubrir todo el contenedor */
+    background-size: cover;
+    /* Establece la posición del fondo */
+    background-position: 20%;
+/* Establece un contenedor flexible */
+    display: flex;
+    /* Alinea los elementos verticalmente en el centro */
+    align-items: center;
+    /* Alinea los elementos horizontalmente en el centro */
+    justify-content: center;
+    /* Establece la altura del cuerpo de la página al 100% del viewport */
+    height: 100vh;
+    /* Agrega un padding en la parte superior de la página */
+    padding-top: 50px;
+}
+
+#calculator {
+    margin-top: 10px;
+    /* Establece el ancho máximo del contenedor */
+    max-width: 250px;
+    background-image: url("/assets/img/relampago.png");
+    background-size: cover;
+    border-radius: 10px;
+    padding: 20px;
+    /* Agrega una sombra */
+    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+
+}
+
+#display {
+    width: 100%;
+    height: 56px;
+    font-size: 21px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 22px;
+    border-radius: 5px;
+    color: #0000ff;
+    background-color: #3a87daa6;
+    border: 1px, solid;
+    /* Establece el modelo de caja */
+    box-sizing: border-box;
+    font-family: "Press Start 2P", Verdana, sans-serif;
+}
+
+.operator {
+    /* Establece el color de los operadores */
+    color: #11bbe6;
+}
+
+/* Estilo para el botón de igual */
+.equal {
+    width: calc(50% - 10px);
+    /* Establece el ancho al 50% menos 10px */
+}
+
+button {
+    width: calc(25% - 10px);
+    /* Establece el ancho al 25% menos 10px */
+    height: 50px;
+    /* Establece la altura */
+    font-size: 20px;
+
+    /* Agrega un margen de 10 píxeles en la parte superior y inferior
+y un margen de 5 píxeles en los lados izquierdo y derecho del elemento */
+    margin: 10px 5px;
+
+    /* Elimina el borde del elemento */
+    border: none;
+
+    /* Agrega esquinas redondeadas a los bordes del elemento
+   con un radio de curvatura de 5 píxeles */
+    border-radius: 5px;
+
+    /* Hace que el elemento flote a la izquierda de su contenedor */
+    float: left;
+
+    /* Establece el color de fondo del elemento en un tono oscuro de azul */
+    background-color: #0d1b2a;
+
+    /* Establece el color de texto del elemento en un tono claro de azul */
+    color: #64acf9;
+
+    /* Agrega una sombra al elemento utilizando diferentes
+    prefijos de proveedores de navegadores */
+    -webkit-box-shadow: -1px 1px 30px -5px #00000033;
+    -moz-box-shadow: -1px 1px 30px -5px #00000033;
+    box-shadow: -1px 1px 30px -5px #00000033;
+}
+
+/* Agrega un efecto de cursor al pasar el mouse sobre el botón */
+button:hover {
+    cursor: pointer;
+}
+
+/* Agrega una animación de escala y una sombra al hacer clic en el botón */
+button:active {
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px 1px #0cee727b, 0 1.5px 1.5px rgba(32, 28, 241, 0.528);
+}
+
+/* Centra el encabezado en la parte superior de la página y lo mantiene fijo en la parte superior al desplazarse */
+header {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 48%;
+    transform: translateX(-40%);
+}
+
+/* Establece el tamaño de fuente, el peso de fuente y la fuente para el elemento H1 */
+h1 {
+    font-size: 35px;
+    font-weight: 900;
+    font-family: "Press Start 2P", sans-serif;
+}
+
+/* Establece el color del texto en rojo para los elementos SPAN dentro del elemento H1 */
+.span-h1 {
+    color: red;
+}
+
+/* Establece el tamaño de fuente para los elementos STRONG dentro del elemento H1 */
+.strong-h1 {
+    font-size: 52px;
+}
+
+/* Establece el tamaño de fuente para todos los elementos STRONG */
+strong {
+    font-size: 30px;
+}
